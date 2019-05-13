@@ -47,6 +47,12 @@ One of two things will happen:
 1. The program hangs (freezes) for about 15 seconds
    1. This means the ip address is probably wrong.
    
+# Read the help
+```
+java external/HS100Controller
+```
+This will uptput the usage instructions.
+
 # Turn the switch ON
 ```
 java external/HS100Controller 192.168.1.13 on
@@ -104,8 +110,13 @@ A clearer version of that data follows:
    }
 }
 ```
-# Read the help
+If the switch is ON:
 ```
-java external/HS100Controller
+"relay_state":1,
 ```
-This will uptput the usage instructions.
+If the switch is OFF:
+```
+"relay_state":0,
+```
+
+
