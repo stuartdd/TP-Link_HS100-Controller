@@ -131,11 +131,14 @@ If the switch is OFF:
 ```
 * THANKS:
 Thanks to the following articles who's authors inspired this work!
+
 *Visit their sites to get more information on the TP-LINK switches.*
+```
 https://machinekoder.com/controlling-tp-link-hs100110-smart-plugs-with-machinekit/
 https://blog.georgovassilis.com/2016/05/07/controlling-the-tp-link-hs100-wi-fi-smart-plug/
-
+```
 And Mkyong for the REGX ip validation.
+```
 https://www.mkyong.com/regular-expressions/how-to-validate-ip-address-with-regular-expression/
-
+```
 
