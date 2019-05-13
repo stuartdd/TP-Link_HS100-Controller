@@ -35,7 +35,7 @@ javac external/HS100Controller.java
 ```
 This will create a new HS100Controller.class file.
 
-# Run
+# Test the program 
 Assuming an ip address like this 192.168.1.13 you can execute the program as follows:
 ```
 java external/HS100Controller 192.168.1.13
@@ -43,5 +43,34 @@ java external/HS100Controller 192.168.1.13
 One of two things will happen:
 1. A long String will be printed to the log. 
    1. If this happens your are good to go.
+   1. This string contains status data from your switch. (More on this below)
 1. The program hangs (freezes) for about 15 seconds
    1. This means the ip address is probably wrong.
+   
+# Turn the switch ON
+```
+java external/HS100Controller 192.168.1.13 on
+```
+The following text should be output:
+```
+{"system":{"set_relay_state":{"err_code":0}}}
+```
+# Turn the switch OFF
+```
+java external/HS100Controller 192.168.1.13 off
+```
+The following text should be output:
+```
+{"system":{"set_relay_state":{"err_code":0}}}
+```
+# Fetch the status String
+```
+java external/HS100Controller 192.168.1.13 status
+```
+Note this is the default behaviour is no action is defined
+
+# Read the help
+```
+java external/HS100Controller
+```
+This will uptput the usage instructions.
