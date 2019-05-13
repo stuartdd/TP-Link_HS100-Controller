@@ -23,12 +23,14 @@ The following files and directories are created:
 │   └── HS100Controller.java
 └── README.md
 ```
-* HS100Controller.java is the source code. Needs to be compiled if it is changed.
+* HS100Controller.java is the source code. You will need to compile if it is changed.
 * HS100Controller.class is the java executable produced when you compile the source file.
-  * The existing file will run on any computer that has Java installed.
+  * The existing file will run on any computer that has Java Rruntime installed.
 * README.md The file you are reading now!
 
 # Compile (IF REQUIRED)
+You will need to have the Java Development Kit (JDK) installed to compile the code.
+
 From the root directory. The one with the README.md file in it, type:
 ```
 javac external/HS100Controller.java
@@ -36,17 +38,19 @@ javac external/HS100Controller.java
 This will create a new HS100Controller.class file.
 
 # Test the program 
-Assuming an ip address like this 192.168.1.13 you can execute the program as follows:
+Assuming your device has an ip address like this '192.168.1.13' you can execute the program as follows:
 ```
 java external/HS100Controller 192.168.1.13
 ```
 One of two things will happen:
+
 1. A long String will be printed to the log. 
    1. If this happens your are good to go.
    1. This string contains status data from your switch. (More on this below)
 1. The program hangs (freezes) for about 15 seconds
    1. This means the ip address is probably wrong.
-   1. Be patient. It often takes a couple of seconds to wake up!
+
+Be patient. It often takes a couple of seconds to wake up!
    
 # Read the help
 ```
@@ -125,5 +129,13 @@ If the switch is OFF:
 ```
 "relay_state":0,
 ```
+* THANKS:
+Thanks to the following articles who's authors inspired this work!
+*Visit their sites to get more information on the TP-LINK switches.*
+https://machinekoder.com/controlling-tp-link-hs100110-smart-plugs-with-machinekit/
+https://blog.georgovassilis.com/2016/05/07/controlling-the-tp-link-hs100-wi-fi-smart-plug/
+
+And Mkyong for the REGX ip validation.
+https://www.mkyong.com/regular-expressions/how-to-validate-ip-address-with-regular-expression/
 
 
