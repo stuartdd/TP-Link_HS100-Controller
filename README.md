@@ -17,6 +17,8 @@ On the command line type
 ```
 git clone https://github.com/stuartdd/TP-Link_HS100-Controller.git
 ```
+Or just copy the files if you do not have git. You only really need theh .class file.
+
 The following files and directories are created:
 ```
 ├── external
