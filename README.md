@@ -46,12 +46,13 @@ One of two things will happen:
    1. This string contains status data from your switch. (More on this below)
 1. The program hangs (freezes) for about 15 seconds
    1. This means the ip address is probably wrong.
+   1. Be patient. It often takes a couple of seconds to wake up!
    
 # Read the help
 ```
 java external/HS100Controller
 ```
-This will uptput the usage instructions.
+This will uptput the usage instructions (I wont include them here as you can see them for yourself).
 
 # Turn the switch ON
 ```
@@ -69,7 +70,7 @@ The following text should be output:
 ```
 {"system":{"set_relay_state":{"err_code":0}}}
 ```
-# Fetch the status
+# Fetch the device status
 ```
 java external/HS100Controller 192.168.1.13 status
 ```
@@ -103,7 +104,7 @@ To see this go to the following site http://json-validator.com/ and paste the te
          "alias":"plug 1",
          "dev_name":"Wi-Fi Smart Plug",
          "icon_hash":"",
-         "relay_state":1,
+         "relay_state":1,            <--- This is the important line --->
          "on_time":7194,
          "active_mode":"schedule",
          "feature":"TIM",
