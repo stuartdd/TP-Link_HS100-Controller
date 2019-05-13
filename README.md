@@ -93,7 +93,7 @@ The following text should be output (note. I have changed the id's to ? to hide 
 ```
 A clearer version of that data follows:
 
-To see this go to the following site http://json-validator.com/ and paste the text in to the empty box. Then press the *Validate* button. The following will be displayed:
+To see this go to the following site http://json-validator.com/ and paste the text from your device in to the empty box. Then press the *Validate* button. The following will be displayed:
 ```
 {
    "syste":{
