@@ -9,6 +9,7 @@ Prerequsite:
   * You can allocate a fixed ip address so things dont change over time.
 * I have included a compiled file (.class) so you dont really need to compile it unless you change the code (.java).
   * You will need the Java runtime to be installed.
+  * just type 'java' on the command line to find out if it installed.
 
 # Clone this project:
 CD to a project directory (any path will do):
