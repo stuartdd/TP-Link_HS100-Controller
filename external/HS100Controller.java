@@ -171,7 +171,7 @@ public class HS100Controller {
                 /*
                 Make every arg lowercase
                  */
-                arg = arg.toLowerCase();
+                arg = arg.toLowerCase().trim();
                 /*
                 Validate and set the port. 
                  */
