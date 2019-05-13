@@ -129,7 +129,7 @@ If the switch is OFF:
 ```
 "relay_state":0,
 ```
-* THANKS:
+# THANKS:
 Thanks to the following articles who's authors inspired this work!
 
 *Visit their sites to get more information on the TP-LINK switches.*
