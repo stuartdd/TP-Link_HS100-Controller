@@ -75,7 +75,7 @@ public class HS100Controller {
             System.out.println(decrypt(read(clientSocket.getInputStream())));
         } catch (IOException ex) {
             /*
-            Somthing wend horibly wrong so print the stack trace and exit!
+            Somthing wend horribly wrong so print the stack trace and exit!
              */
             ex.printStackTrace(System.err);
             /*
