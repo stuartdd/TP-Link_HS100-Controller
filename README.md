@@ -89,14 +89,14 @@ Note this is the default behaviour if no action is defined
 
 The following text should be output (note. I have changed the id's to ? to hide my device):
 ```
-{"syste":{"get_sysinfo":{"err_code":0,"sw_ver":"1.2.5 Build 171213 Rel.101014","hw_ver":"1.0","type":"IOT.SMARTPLUGSWITCH","model":"HS100(UK)","mac":"??:??:??:??:??:??","deviceId":"?????????????????????","hwId":"?????????????????????","fwId":"00000000000000000000000000000000","oemId":"?????????????????????","alias":"plug 1","dev_name":"Wi-Fi Smart Plug","icon_hash":"","relay_state":1,"on_time":7194,"active_mode":"schedule","feature":"TIM","updating":0,"rssi":-65,"led_off":0,"latitude":99.99,"longitude":99.99}}}
+{"system":{"get_sysinfo":{"err_code":0,"sw_ver":"1.2.5 Build 171213 Rel.101014","hw_ver":"1.0","type":"IOT.SMARTPLUGSWITCH","model":"HS100(UK)","mac":"??:??:??:??:??:??","deviceId":"?????????????????????","hwId":"?????????????????????","fwId":"00000000000000000000000000000000","oemId":"?????????????????????","alias":"plug 1","dev_name":"Wi-Fi Smart Plug","icon_hash":"","relay_state":1,"on_time":7194,"active_mode":"schedule","feature":"TIM","updating":0,"rssi":-65,"led_off":0,"latitude":99.99,"longitude":99.99}}}
 ```
 A clearer version of that data follows:
 
-To see this go to the following site http://json-validator.com/ and paste the text from your device in to the empty box. Then press the *Validate* button. The following will be displayed:
+To see this go to the following site http://json-validator.com/ and paste the text from your device in to the empty box. Then press the *Validate* button. The text will be re-formatted to look somthing like this:
 ```
 {
-   "syste":{
+   "system":{
       "get_sysinfo":{
          "err_code":0,
          "sw_ver":"1.2.5 Build 171213 Rel.101014",
