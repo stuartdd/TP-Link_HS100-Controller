@@ -24,10 +24,24 @@ The following files and directories are created:
 └── README.md
 ```
 * HS100Controller.java is the source code. Needs to be compiled if it is changed.
-* HS100Controller.java is the java executable produced when you compile the source file.
+* HS100Controller.class is the java executable produced when you compile the source file.
   * The existing file will run on any computer that has Java installed.
+* README.md The file you are reading now!
 
 # Compile (IF REQUIRED)
+From the root directory. The one with the README.md file in it, type:
 ```
 javac external/HS100Controller.java
 ```
+This will create a new HS100Controller.class file.
+
+# Run
+Assuming an ip address like this 192.168.1.13 you can execute the program as follows:
+```
+java external/HS100Controller 192.168.1.13
+```
+One of two things will happen:
+1. A long String will be printed to the log. 
+   1. If this happens your are good to go.
+1. The program hangs (freezes) for about 15 seconds
+   1. This means the ip address is probably wrong.
